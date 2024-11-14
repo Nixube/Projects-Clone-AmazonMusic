@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "AmazonEmber";
+  src: url("../fonts/AmazonEmber_Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Reset css */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "AmazonEmber", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #020202;
+}
+
+header {
+  color: #fff;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "AmazonEmber", sans-serif;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background: transparent;
+  backdrop-filter: blur(150px);
+  font-size: 0.8em;
+  border-bottom: 1px solid #2f3030;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a:link {
+  color: #25d1da;
+  text-decoration: none;
+}
+nav ul li a {
+  font-size: 1.15em;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+nav ul li a:hover {
+  color: #6de5f2;
+  text-decoration: none;
+}
+/* Ya que estamos en inicio */
+#podcasts {
+  color: #25d1da;
+}
+.search {
+  margin-left: 10%;
+}
+.search input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.search button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.login {
+  margin-left: 15%;
+  margin-right: 10px;
+  display: block;
+}
+.login a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid #25d1da;
+  padding: 8px 14px 8px 14px;
+  border-radius: 18px;
+  background-color: #25d1da;
+  transition: 0.5s;
+}
+.login a:hover {
+  background-color: #6de5f2;
+}
+.white-bar {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+}
+p {
+  color: white;
+}
+#contenedor {
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 1300px; /* Ajustar si no es suficiente */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.titulo {
+  position: absolute;
+  top: 155px;
+  font-size: 0.9em;
+  /* font-size: 18px;
+      font-weight: bold; */
+}
+.titulo:hover {
+  color: #25d1da;
+  cursor: pointer;
+}
+.subtitulo {
+  position: absolute;
+  top: 175px;
+  font-size: 0.7em;
+  color: #9a9c9c;
+  /* font-size: 14px;
+      color: #666; */
+}
+.seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 0px 12px;
+  padding: 20px;
+}
+.tituloseccion {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.masgusta {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.song-masgusta {
+  flex: 0 0 250px; /* Ajustar si no es suficiente */
+  margin: 0 10px;
+  text-align: center;
+}
+
+.song-masgusta img {
+  width: 100%;
+  height: 150px; /* Ajustar si no es suficiente */
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.song-masgusta img:hover {
+  filter: grayscale(40%);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.03);
+  transition: 1s;
+}
+@media (max-width: 1320px) {
+  header {
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "AmazonEmber", sans-serif;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: transparent;
+    backdrop-filter: blur(150px);
+    font-size: 0.8em;
+    border-bottom: 1px solid #2f3030;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  nav ul li a:link {
+    color: #25d1da;
+    text-decoration: none;
+  }
+  nav ul li a {
+    font-size: 1.15em;
+    color: #fff;
+    transition-duration: 0.4s;
+  }
+  nav ul li a:hover {
+    color: #6de5f2;
+    text-decoration: none;
+  }
+  /* Ya que estamos en inicio */
+  #inicio {
+    color: #25d1da;
+  }
+  .search {
+    margin-left: 10px;
+  }
+  .search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  .search button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  .login {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+  .login a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #25d1da;
+    padding: 8px 14px 8px 14px;
+    border-radius: 18px;
+    background-color: #25d1da;
+    transition: 0.5s;
+  }
+  .login a:hover {
+    background-color: #6de5f2;
+  }
+  .white-bar {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+  }
+  p {
+    color: white;
+  }
+  #contenedor {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 1000px; /* Ajustar si no es suficiente */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "AmazonEmber", sans-serif;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: transparent;
+    backdrop-filter: blur(150px);
+    font-size: 0.8em;
+    border-bottom: 1px solid #2f3030;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  #contenedor {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 700px; /* Ajustar si no es suficiente */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .pasar {
+    font-size: 0.8em;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .pasar:hover {
+    color: #6de5f2;
+    cursor: pointer;
+  }
+  .derecha {
+    margin-left: 60px;
+  }
+  .izquierda {
+    margin-left: 40px;
+  }
+  .todo {
+    border-style: solid;
+    border-color: #282929;
+    border-width: 1px;
+    margin-left: 60px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 18px;
+    background-color: #282929;
+    font-size: 0.75em;
+    cursor: pointer;
+    /* padding: 10px;
+    background-color: #ccc; */
+  }
+  #reproductor {
+    border-top: 1px solid #2f3030;
+    margin-top: 160px;
+    bottom: 0px;
+    height: 100px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+  }
+  /* Parte botones del reproductor */
+  #botones {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+  }
+  #contenedorslidercancion {
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    width: 500px;
+  }
+  /* Slider volumen*/
+  #slidervolumen {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  /* Canciones */
+  .song-perder,
+  .song-masgusta {
+    flex: 0 0 150px; /* Ajustar si no es suficiente */
+    margin: 0 10px;
+    text-align: center;
+  }
+  .masgusta div,
+  .perder div {
+    display: inline-block;
+    margin: 10px;
+    height: 190px;
+    width: 12px;
+  }
+  .masgusta img,
+  .perder img {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 700px) {
+  nav ul li a {
+    font-size: 0;
+    color: #fff;
+    transition-duration: 0.4s;
+    width: 0px;
+  }
+  nav ul li a svg {
+    width: 20px;
+  }
+  .search {
+    margin-left: 0px;
+  }
+  .search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 50px;
+  }
+  .login {
+    margin-left: 5px;
+  }
+  .login a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #25d1da;
+    padding: 6px 12px 6px 12px;
+    border-radius: 18px;
+    background-color: #25d1da;
+    transition: 0.5s;
+  }
+  #contenedor {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 400px; /* Ajustar si no es suficiente */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* Canciones */
+  .song-masgusta {
+    flex: 0 0 80px; /* Ajustar si no es suficiente */
+    margin: 0 10px;
+    text-align: center;
+    height: 10px;
+  }
+  .masgusta div {
+    display: inline-block;
+    margin: 10px;
+    height: 190px;
+    width: 12px;
+  }
+  .masgusta img {
+    width: 100%;
+    height: 120px;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 500px) {
+  #contenedor {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 400px; /* Ajustar si no es suficiente */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .pasar {
+    font-size: 0.8em;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .pasar:hover {
+    color: #6de5f2;
+    cursor: pointer;
+  }
+  .derecha {
+    margin-left: 20px;
+  }
+  .izquierda {
+    margin-left: 20px;
+  }
+  .todo {
+    border-style: solid;
+    border-color: #282929;
+    border-width: 1px;
+    margin-left: 0px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 18px;
+    background-color: #282929;
+    font-size: 0.5em;
+    cursor: pointer;
+  }
+  #botones {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+  }
+  #contenedorslidercancion {
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    width: 400px;
+  }
+  /* Slider volumen*/
+  #slidervolumen {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 650px;
+  }
+}
